@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>jquery.uniformheight.js Sample</title>
+<script src="../lib/jquery.js"></script>
+<script src="../dist/jquery.uniformheight.js"></script>
+<style>
+.mod-uniformheightlist {
+	background: #fcc;
+	width: 600px;
+	zoom: 1;
+}
+.mod-uniformheightlist:after {
+	content: "."; display: block; clear: both; height: 0; visibility: hidden; font-size: 0;
+}
+.mod-uniformheightlist-item {
+	float: left;
+	width: 200px;
+	background: #ccf;
+}
+</style>
+<script>
+$(function () {
+	$('.mod-uniformheightlist').uniformheight({
+		item_selector: '.mod-uniformheightlist-item',
+		col: 3
+	});
+});
+</script>
+</head>
+
+<body>
+<ul class="mod-uniformheightlist">
+<li class="mod-uniformheightlist-item">
+hoge<br>
+hoge
+</li>
+<li class="mod-uniformheightlist-item">
+hoge<br>
+hoge<br>
+hoge<br>
+hoge
+</li>
+<li class="mod-uniformheightlist-item">
+hoge<br>
+hoge<br>
+hoge
+</li>
+<li class="mod-uniformheightlist-item">
+hoge<br>
+hoge<br>
+hoge<br>
+hoge<br>
+hoge
+</li>
+<li class="mod-uniformheightlist-item">
+hoge<br>
+hoge<br>
+hoge<br>
+hoge<br>
+hoge<br>
+hoge<br>
+hoge<br>
+hoge
+</li>
+<li class="mod-uniformheightlist-item">
+hoge<br>
+hoge<br>
+hoge
+</li>
+<li class="mod-uniformheightlist-item">
+hoge<br>
+hoge<br>
+hoge<br>
+hoge<br>
+hoge
+</li>
+<li class="mod-uniformheightlist-item">
+hoge<br>
+hoge<br>
+hoge<br>
+hoge<br>
+hoge<br>
+hoge<br>
+hoge<br>
+hoge
+</li>
+</ul>
+</body>
+</html>
